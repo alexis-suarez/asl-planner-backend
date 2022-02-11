@@ -8,6 +8,7 @@ import { join } from 'path';
 
 // TypeOrmModule
 import { TypeOrmModule } from '@nestjs/typeorm';
+import { TableControllerController } from './controllers/table.controller.controller';
 
 @Module({
   imports: [
@@ -28,7 +29,7 @@ import { TypeOrmModule } from '@nestjs/typeorm';
       migrations: [join(__dirname, '/migrations/**/*.ts')],
     }),
   ],
-  controllers: [AppController],
+  controllers: [AppController, TableControllerController],
   providers: [AppService],
 })
 export class AppModule { }
