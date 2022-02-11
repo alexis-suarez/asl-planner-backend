@@ -1,0 +1,520 @@
+body {
+    font-size: 14px;
+    font-family: 'Ubuntu', sans-serif;
+    position: relative;
+}
+
+header {
+    width: 100%;
+    height: 35px;
+    position: relative;
+    background: #233D58;
+    z-index: 999;
+}
+
+header h1 {
+    display: none;
+}
+
+header nav .ioMenuMovil {
+    height: 25px;
+    width: 120px;
+    cursor: pointer;
+    line-height: 40px;
+    margin: 0px 0px 0px 10px;
+    padding-top: 5px;
+}
+
+header nav .ioMenuMovil img {
+    height: 100%;
+}
+
+header nav #cardMenu {
+    display: none;
+    position: relative;
+    width: 230px;
+    background: white;
+    top: -30px;
+    left: 0px;
+    border-right: 3px solid #AFAEAE;
+    z-index: 999;
+    padding-bottom: 50px;
+}
+
+header nav #cardMenu #logoMenu {
+    height: 200px;
+    width: 80%;
+    margin: 30px 0px;
+    margin-left: 10%;
+    margin-bottom: 50px;
+}
+
+header nav #cardMenu #logoMenu img {
+    width: 100%;
+}
+
+header nav #cardMenu ul {
+    margin-top: -20px;
+}
+
+header nav #cardMenu ul li {
+    list-style: none;
+    font-size: 1.5em;
+    line-height: 37px;
+}
+
+header nav #cardMenu ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+header #prev_section,
+header #next_section {
+    font-family: 'Ubuntu', sans-serif;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    margin: 5px;
+    position: absolute;
+    top: 0px;
+    overflow: hidden;
+}
+
+header #prev_section {
+    right: 35px;
+}
+
+header #next_section {
+    right: 5px;
+}
+
+header #prev_section img,
+header #next_section img {
+    width: 250%;
+    top: -19px;
+    left: -19px;
+    position: relative;
+}
+
+header #next_section img {
+    transform: rotate(180deg);
+}
+
+#slider {
+    width: 100%;
+    position: relative;
+    height: 80%;
+}
+
+#slider section.slide {
+    position: absolute;
+    width: 100%;
+    top: -18px;
+    left: 0px;
+}
+
+#slider #home {
+    font-family: 'Ubuntu', sans-serif;
+    background: #233D58;
+    position: relative;
+    text-align: center;
+    padding-bottom: 70px;
+}
+
+#slider #home .mainAnimation {
+    width: 80%;
+    margin-left: 10%;
+    min-height: 300px;
+    position: absolute;
+}
+
+canvas {
+    display: block;
+    vertical-align: bottom;
+}
+
+#particles-js {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url("");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+}
+
+#slider #home .mainLogo {
+    background: none;
+    position: relative;
+    width: 60vw;
+    margin-left: 20vw;
+    min-height: 430px;
+}
+
+#slider #home .mainLogo h2 {
+    font-size: 1.2em;
+    padding-top: 80px;
+    color: white;
+    font-weight: lighter;
+}
+
+#slider #home .mainLogo strong {
+    font-size: 2em;
+    display: block;
+}
+
+#slider #home .mainLogo figure,
+#slider #home .mainLogo figure img {
+    width: 100%;
+    margin: 0px;
+}
+
+#slider #home .buttonPage {
+    width: 100%;
+    text-align: center;
+}
+
+#slider #home .buttonPage>* {
+    display: inline-block;
+    width: 40%;
+    margin: 5px 2.5%;
+    color: white;
+    padding: 15px 2.5%;
+}
+
+#slider #home #contratame {
+    cursor: pointer;
+    background: #F8931F;
+}
+
+#slider #home a {
+    text-decoration: none;
+    background: #29abe2;
+}
+
+#slider #aboutme {
+    height: 100vh;
+    background: #f1f1f1;
+}
+
+#slider #skills {
+    height: 100vh;
+    background: #f1f1f1;
+}
+
+#slider #portafolio {
+    height: 100vh;
+    background: #f1f1f1;
+}
+
+#slider #blog {
+    height: 100vh;
+    background: #f1f1f1;
+}
+
+#contactForm {
+    position: absolute;
+    right: 0px;
+    top: 35px;
+    background: white;
+    height: 100vh;
+    width: 250px;
+    border-top: 1px solid black;
+    box-shadow: 0px 0px 3px #9F9E9E;
+    font-family: 'Ubuntu', sans-serif;
+    z-index: 999;
+    display: none;
+}
+
+#contactForm #closeForm {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 85%;
+    top: 190px;
+}
+
+#contactForm #closeForm:hover {
+    cursor: pointer;
+}
+
+#contactForm #closeForm:before {
+    font-family: 'icomoon';
+    content: "\ea0f";
+    top: 5px;
+    left: 9px;
+    position: relative;
+}
+
+#contactForm figure {
+    height: 180px;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    background: #29abe2;
+}
+
+#contactForm figure img {
+    height: 100%;
+    margin: 0px;
+}
+
+#contactForm p {
+    margin: 20px;
+    width: 90%;
+    margin-left: 5%;
+}
+
+#contactForm input,
+#contactForm textarea {
+    display: block;
+    margin: 20px;
+    border: none;
+    border-bottom: 2px solid grey;
+    width: 90%;
+    margin-left: 5%;
+    padding-bottom: 3px;
+    margin-bottom: 50px;
+    font-weight: bold;
+}
+
+#contactForm #button {
+    background: #F8931F;
+    color: white;
+    border: none;
+    padding: 8px 0px;
+    border-radius: 5px;
+}
+
+#contactButton {
+    width: 60px;
+    height: 60px;
+    background: #F8931F;
+    border-radius: 50%;
+    color: white;
+    z-index: 80;
+    right: 10px;
+    position: fixed;
+    top: 80vh;
+}
+
+#contactButton:hover {
+    cursor: pointer;
+}
+
+#contactButton:before {
+    font-family: 'icomoon';
+    content: '\e945';
+    position: relative;
+    font-size: 2.5em;
+    bottom: -8px;
+    left: 12px;
+}
+
+footer {
+    width: 100%;
+    background: black;
+    color: white;
+    text-align: center;
+    z-index: 90;
+    height: 150px;
+    position: fixed;
+    bottom: -130px;
+    transition-duration: 0.5s;
+}
+
+footer:hover {
+    bottom: 0px;
+}
+
+footer:before {
+    font-family: 'icomoon';
+    font-size: 4em;
+    content: "\ea50";
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    width: 80px;
+    height: 80px;
+    margin-left: -40px;
+    margin-top: -30px;
+    border-radius: 50%;
+    background: black;
+    color: black;
+    transition-duration: 0.3s;
+    text-shadow: 0px 15px 0px white;
+}
+
+footer:hover:before {
+    transform: rotate(180deg);
+    background: white;
+    color: white;
+    text-shadow: 0px 15px 0px black;
+}
+
+footer .rrss {
+    margin-top: 70px;
+    width: 100%;
+    height: 50px;
+}
+
+footer .rrss a {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    position: relative;
+}
+
+footer .rrss a:before {
+    color: white;
+    text-decoration: none;
+    position: absolute;
+    font-size: 2em;
+    top: 4px;
+    left: 6px;
+    font-family: 'icomoon';
+}
+
+footer .rrss a:nth-child(1):before {
+    content: '\ea90';
+}
+
+footer .rrss a:nth-child(2):before {
+    content: '\ea92';
+}
+
+footer .rrss a:nth-child(3):before {
+    content: '\ea93';
+}
+
+footer .rrss a:nth-child(4):before {
+    content: '\ea96';
+}
+
+footer p {
+    font-size: 0.8em;
+    font-weight: lighter;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+@media screen and (min-width: 480px) {
+    #slider #home .mainLogo {
+        width: 270px;
+        left: 50%;
+        margin-left: -135px;
+        padding-bottom: 50px;
+    }
+    #slider #home .mainLogo h2 {
+        font-size: 1.4em;
+    }
+    #slider #home .mainLogo figure {
+        width: 80%;
+        margin-left: 10%;
+    }
+    #slider #home .buttonPage>* {
+        width: 200px;
+    }
+}
+
+@media screen and (min-width: 600px) {}
+
+@media screen and (min-width: 767px) {
+    header {
+        height: 50px;
+    }
+    header h1 {
+        display: inline-block;
+        height: 50px;
+        width: 20%;
+        margin: 0px;
+        margin-left: 80px;
+        line-height: 50px;
+        min-width: 200px;
+    }
+    header h1>* {
+        display: inline-block;
+        vertical-align: middle;
+        text-decoration: none;
+        color: white;
+        font-size: 0.7em;
+        margin: 0px 1px;
+    }
+    header h1 figure {
+        height: 40px;
+        width: 40px;
+        margin: 0px;
+    }
+    header h1 figure img {
+        width: 100%;
+    }
+    header nav {
+        display: inline-block;
+        vertical-align: middle;
+        width: 62%;
+        position: relative;
+    }
+    header nav #showMenu,
+    header nav #hideMenu {
+        display: none;
+    }
+    header nav #cardMenu {
+        display: inline-block;
+        border: none;
+        background: none;
+        position: relative;
+        top: 0px;
+        width: 100%;
+        text-align: right;
+        padding-bottom: 0px;
+    }
+    header nav #cardMenu figure {
+        display: none;
+    }
+    header nav #cardMenu ul {
+        padding: 0px;
+        margin: 0px;
+        margin-top: -15px;
+    }
+    header nav #cardMenu ul li {
+        display: inline-block;
+        width: 75px;
+        text-align: center;
+        font-size: 1.2em;
+        margin: 0px -2px;
+    }
+    header nav #cardMenu ul li a {
+        color: white;
+    }
+    header #prev_section,
+    header #next_section {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        background: #29abe2;
+        right: 40px;
+        z-index: 999;
+        border-radius: 50%;
+    }
+    header #prev_section {
+        top: 115px;
+    }
+    header #next_section {
+        top: 190px;
+    }
+    header #prev_section img,
+    header #next_section img {
+        width: 100%;
+        top: 0px;
+        left: 0px;
+    }
+    #contactForm {
+        top: 50px;
+        width: 400px;
+    }
+    #contactButton {
+        right: 35px;
+    }
+}
+
+@media screen and (min-width: 950px) {}

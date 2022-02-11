@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Alexis Suárez</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="keywords" content="Desarrollo de Software, Diseño de páginas Web, Creación de Apps">
+  <meta name="description" content="Creación de Software profesional">
+  <meta name="owner" content="Alexis Suárez">
+  <meta name="author" content="alexissuarezllamas">
+  <meta name="robots" content="index, follow">
+
+  <script src="js/modernizr.js"></script>
+
+  <link href="css/normalize.css" rel="stylesheet">
+
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/design.css" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+</head>
+
+<body>
+  <header>
+    <h1>
+      <a href="index.html">
+        <figure>
+          <img src="img/icon.png" alt="">
+        </figure>
+      </a>
+      <a href="index.html">Alexis Suárez</a>
+    </h1>
+
+    <nav id="ioMenu">
+      <figure id="showMenu" class="ioMenuMovil" onclick="displayMenu()">
+        <img src="img/menu.png" alt="">
+      </figure>
+
+      <div id="cardMenu">
+        <figure id="hideMenu" class="ioMenuMovil" onclick="displayMenu()">
+          <img src="img/exit.png" alt="">
+        </figure>
+
+        <figure id="logoMenu">
+          <img src="img/logo.png" alt="">
+        </figure>
+        <ul>
+          <li><a onclick="navSection('home')" href="#">Home</a></li>
+          <li><a onclick="navSection('aboutme')" href="#">Sobre Mi</a></li>
+          <li><a onclick="navSection('skills')" href="#">Skills</a></li>
+          <li><a onclick="navSection('portafolio')" href="#">Portafolio</a></li>
+          <li><a onclick="navSection('blog')" href="#">Blog</a></li>
+          <li><a onclick="displayFormContact('block')" href="#">Contacto</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div id="prev_section" onclick="displaySection('prev')"><img src="icons/icon-08.png" alt=""></div>
+    <div id="next_section" onclick="displaySection('next')"><img src="icons/icon-08.png" alt=""></div>
+  </header>
+
+  <div id="slider">
+    <section class="slide" id="home" style="display:block">
+      <div class="mainAnimation">
+        <div id="particles-js"></div>
+      </div>
+      <div class="mainLogo">
+        <h2>Soy un <strong>Desarrollador de Software</strong></h2>
+        <figure>
+          <img src="img/logo.png" alt="">
+        </figure>
+      </div>
+      <div class="buttonPage">
+        <div id="contratame" onclick="displayFormContact('block')">CONTRATAME</div>
+        <a href="docs/cv-alexis-2017.pdf" target="_blank">DESCARGAR CV</a>
+      </div>
+    </section>
+    <section class="slide" id="aboutme" style="display:none"></section>
+    <section class="slide" id="skills" style="display:none"></section>
+    <section class="slide" id="portafolio" style="display:none"></section>
+    <section class="slide" id="blog" style="display:none"></section>
+  </div>
+
+  <div id="contactForm">
+    <form action="contac.php" id="form1" name="form1" method="post">
+      <div id="closeForm" onclick="displayFormContact('none')"></div>
+      <figure id="logoMensaje"><img src="icons/icon-17.png" alt=""></figure>
+
+      <p>Dí Hola</p>
+
+      <input id="name" type="text" name="name" placeholder="Tu Nombre">
+
+      <input id="email" type="text" name="email" placeholder="Tu Email">
+
+      <textarea id="message" name="message" placeholder="Mesaje"></textarea>
+
+      <input id="button" type="submit" name="submit" value="ENVIAR">
+    </form>
+  </div>
+
+  <div id="contactButton" onclick="displayFormContact('block')"></div>
+
+  <footer>
+    <div class="rrss">
+      <a href="https://www.facebook.com/alex.suarez.92372446" target="_blank"></a>
+      <a href="https://www.instagram.com/?hl=es" target="_blank"></a>
+      <a href="https://www.whatsapp.com/?l=es" target="_blank"></a>
+      <a href="https://twitter.com/?lang=es" target="_blank"></a>
+    </div>
+    <p>© 2016 All rights reserved | Privacity Policy</p>
+  </footer>
+
+  <script src="js/particles.js"></script>
+  <script src="js/app.js"></script>
+  <script src="js/slider.js"></script>
+
+</body>
+
+</html>
