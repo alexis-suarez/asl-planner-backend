@@ -3,18 +3,30 @@ import { Observable, of } from 'rxjs';
 import { AppService } from './app.service';
 
 // API's Queries
-// https://dcoff-planner/api/v1/<database>/<tabla_name>
-// https://dcoff-planner/api/v1/<database>/<tabla_name>/id
-// https://dcoff-planner/api/v1/<database>/<tabla_name>/<attribute>/<value>
-// https://dcoff-planner/api/v1/<database>/<catalogue>/<package>/function
-// https://dcoff-planner/api/v1/<database>/<view>
-// https://dcoff-planner/api/v1/<database>/<view>/<attribute>/<value>
-// https://dcoff-planner/api/v1/<database>/<query>
+// https://asl-planner/api/v1/<database>/<tabla_name>
+// https://asl-planner/api/v1/<database>/<tabla_name>/id
+// https://asl-planner/api/v1/<database>/<tabla_name>/<attribute>/<value>
+// https://asl-planner/api/v1/<database>/<catalogue>/<package>/function
+// https://asl-planner/api/v1/<database>/<view>
+// https://asl-planner/api/v1/<database>/<view>/<attribute>/<value>
+// https://asl-planner/api/v1/<database>/<query>
+
+// API's APIs
 // API's Auth
 // API's Email
 // API's File
 // API's AWS
 // API's Google Drive
+// API's Http Request
+
+// CI/CD
+// branch master -> terra-prod
+// branch uat    -> terra-uat
+// branck dev    -> terra-dev
+
+// terra-dev
+// terra-uat
+// terra-prod *
 
 @Controller('api/v1')
 export class AppController {
